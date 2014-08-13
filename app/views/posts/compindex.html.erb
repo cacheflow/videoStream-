@@ -1,0 +1,10 @@
+<h1>Admin Index</h1>
+
+<% @posts.each do |p| %> 
+<%= p.video %> <%= link_to "review to publish", edit_post_path(p), :class => "btn btn-info" %> 
+
+<%= link_to "Delete" post_path(p), method: :delete, data: {confirm: "Are you sure you want to delete this forever and ever?"}, :class => "btn btn-danger" %> 
+
+<br></br> 
+
+<% end %> 

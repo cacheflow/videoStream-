@@ -1,0 +1,8 @@
+<%= bootstrap_form_for (@post) do |p| %> 
+	<%= p.file_upload :video %><br/>
+	<%= p.hidden_field :approved, :value => true %><br/>
+	<%= p.submit "Publish", class: "btn btn-primary btn-block" %> 
+
+<% end %> 	
+
+
